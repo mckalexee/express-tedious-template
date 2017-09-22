@@ -4,6 +4,9 @@
   "description": "A template for an express server that uses tedious as the data backend",
   "main": "dist/boot.js",
   "scripts": {
+    "build": "gulp default",
+    "dev": "concurrently --names \"APP,TSC\" -c \"bgBlue.bold,bgMagenta.bold\" \"gulp watch\" \"npm start\" --kill-others",
+    "start": "nodemon dist/boot --watch dist --delay 5",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alex McKenzie",
@@ -19,8 +22,10 @@
     "@types/node": "^8.0.29",
     "@types/tedious": "^1.8.31",
     "@types/tedious-connection-pool": "^1.0.1",
+    "concurrently": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-typescript": "^3.2.2",
+    "nodemon": "^1.12.1",
     "tslint": "^5.7.0",
     "typescript": "^2.5.2"
   }
