@@ -1,6 +1,6 @@
 {
   "name": "express-tedious-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A template for an express server that uses tedious as the data backend",
   "main": "dist/boot.js",
   "scripts": {
